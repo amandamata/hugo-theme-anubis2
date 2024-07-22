@@ -11,7 +11,6 @@
         <div class="post-header">
             <header>
                 <h1 class="p-name post-title{{ if .Params.favorite }} favorite{{end}}{{ if .Params.draft }} draft{{end}}">{{ trim .Title  " " | markdownify }}</h1>
-                {{ partial "post-language-switcher.html" . }}
             </header>
             {{ partial "post-info.html" . }}
         </div>

@@ -1,9 +1,4 @@
 <footer class="common-footer noselect">
-    {{ $languagesCount := $.Site.Home.AllTranslations }}
-    {{ if gt $languagesCount 1 }}
-        {{ partial "language-switcher.html" . }}
-    {{ end }}
-
     <div class="common-footer-bottom">
         {{ if .Site.Menus.footer }}
             {{ $currentPage := . }}
@@ -37,7 +32,7 @@
             {{ end }}
         </div>
         <div>
-            {{ i18n "powered" }} <a target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">Hugo</a>, {{ i18n "theme" }} <a target="_blank" rel="noopener noreferrer" href="https://github.com/Junyi-99/hugo-theme-anubis2">Anubis2</a>.<br>
+            {{ i18n "powered" }} <a target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">Hugo</a>, {{ i18n "theme" }} <a target="_blank" rel="noopener noreferrer" href="https://github.com/amandamata/hugo-theme-anubis2">Anubis2</a>.<br>
             {{ partial "footer-extra.html" . }}
         </div>
     </div>
